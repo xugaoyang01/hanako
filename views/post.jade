@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  form(method='post')
+    input(type='text', name='title')
+    br
+    textarea(name='post', rows=20, cols=100)
+    br
+    input(type='submit', value='发表')

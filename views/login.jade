@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  form(method='post')
+    p= 'name: '
+    input(type='text', name='name')
+    br
+    p= 'Pawwword:'
+    input(type='password', name='password')
+    br
+    input(type='submit', value='登陆')
+    br

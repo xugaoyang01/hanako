@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  each post, index in posts
+    p
+      h2
+        a(herf='#')= post.title
+    p(class='info')
+      p='作者: '
+        a(href='#')= post.name
+      p='时间: '
+        a= post.time.minute
+      p= post.post
+
+
